@@ -33,4 +33,16 @@ pipeline {
             }
         }
     }
+    // post build
+    post { 
+        always { 
+            echo 'I will always say Hello again!'
+        }
+        // success { 
+        //     echo 'Pipeline success'
+        // }
+        // failure { 
+        //     echo 'Pipeline failure'
+        // }
+    }
 }
